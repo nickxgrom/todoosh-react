@@ -11,8 +11,7 @@ function Sidebar() {
     let noNotesElement;
     if (!notes.length) {
         noNotesElement = <div>
-            <span>У Вас еще нет записей</span>
-            <button onClick={addNote}>Добавить</button>
+            <span>You have no notes</span>
         </div>
     }
 
@@ -31,6 +30,12 @@ function Sidebar() {
                     updateDate={note.updateDate}
                 />
             }) }
+            <div
+                className="add-note-btn"
+                onClick={addNote}
+            >
+                + Add note
+            </div>
         </div>
 
     )
