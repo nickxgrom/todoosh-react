@@ -19,7 +19,7 @@ function NoteCard(props) {
 
     return (
         <div className="note-card">
-            <div className="d-flex justify-space-between">
+            <div className="d-flex align-center justify-space-between">
                 <div className="note-card_title">{ props.title }</div>
                 <span>{ date }</span>
             </div>

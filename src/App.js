@@ -1,9 +1,11 @@
 import Sidebar from "./components/Sidebar";
+import Note from "./components/Note";
 
 function App() {
   return (
-    <div>
-      <Sidebar />
+    <div className="d-flex">
+        <Sidebar />
+        <Note />
     </div>
   );
 }
