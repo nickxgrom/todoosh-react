@@ -23,8 +23,13 @@ function Sidebar() {
     return (
         <div className="sidebar">
             { noNotesElement }
-            { notes.map(note => {
-                return <NoteCard />
+            { notes.map( (note, index) => {
+                return <NoteCard
+                    key={index}
+                    title={note.name}
+                    subtitle={note.description}
+                    updateDate={note.updateDate}
+                />
             }) }
         </div>
 
